@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+  }
+  
+  section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* First Section - Animation */
+  .first-section {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  svg {
+    width: 900px;
+    height: 900px;
+  }
+  
+  text {
+    fill: #3498db; /* Blue color */
+    font-size: 80px;
+    font-family: Arial, sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+  
+  tspan {
+    opacity: 0;
+    animation: fadeInLetter 2s forwards;
+  }
+  
+  tspan:nth-child(1) { animation-delay: 0.2s; }
+  tspan:nth-child(2) { animation-delay: 0.4s; }
+  tspan:nth-child(3) { animation-delay: 0.6s; }
+  tspan:nth-child(4) { animation-delay: 0.8s; }
+  tspan:nth-child(5) { animation-delay: 1s; }
+  tspan:nth-child(6) { animation-delay: 1.2s; }
+  tspan:nth-child(7) { animation-delay: 1.4s; }
+  tspan:nth-child(8) { animation-delay: 1.6s; }
+  tspan:nth-child(9) { animation-delay: 1.8s; }
+  tspan:nth-child(10) { animation-delay: 2s; }
+  
+  @keyframes fadeInLetter {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #desktop-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 20px !important;
+    display: none; /* Initially hidden */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem !important;
+    height: 50px !important;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem !important;  /* Reduced gap between items */
+    font-size: 0.5rem !important;
+    padding-right: 2rem;  /* Remove default padding */
+  }
+  
+  .nav-links li {
+    flex-shrink: 0;  /* Prevent the items from shrinking */
+  }
+  
+  #desktop-nav .logo {
+    font-size: 1.1rem !important;
+    font-weight: bold;
+    color: #3498db;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  
