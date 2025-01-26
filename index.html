@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Animation with Auto Scroll</title>
+  <title>My_portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -43,8 +43,32 @@
         </div>
     </nav>
    
-    <div class="profile-pic"></div>
-    <div class="profile-text"></div>
+    <section id = "profile">
+      <div class = "profile-pic">
+          <img src="my_image.jpg" alt="Surya-profile-pic" id="image"/>
+      </div>
+      <div class="profile-content">
+      <div class="profile-text">
+          <p class="profile-text1">Hello, I'm</p>
+          <h1 class="title">Arikaran</h1>
+          <p class="profile-text2">Software Developer | Competitive programmer</p>
+      </div>
+      <div class="btn-container">
+          <button class="btn btn-color-1" 
+          onclick="window.open('resume.pdf')">Download CV</button>
+          <button class="btn btn-color-2" 
+          onclick="location.href='/#contact'">Contact Info</button>
+      </div>
+      <div class="icon-container">
+          <img src="linkedin.png" class="icon" alt="My LinkedIn"
+          onclick="location.href='https://www.linkedin.com/in/arikaran1195/'">
+          <img src="leetcode.png" class="icon" alt="My Leetcode Profile"
+          onclick="location.href='https://leetcode.com/u/arikaran__r/'">
+          <img src="github.png" class="icon" alt="My github profile"
+          onclick="location.herf='https://github.com/arikaran03'">
+      </div>
+      </div>
+  </section>
     
   </section>
   

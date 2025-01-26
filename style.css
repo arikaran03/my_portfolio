@@ -78,6 +78,19 @@ tspan:nth-child(10) { animation-delay: 2s; }
 #desktop-nav .logo {
   font-size: 2rem;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: gray;
+  opacity: 0.6;  /* Set opacity to low when hovered */
+  transition: opacity 0.3s ease;  /* Smooth transition effect */
+}
+
 
 #desktop-nav .nav-links {
   text-decoration: none;
@@ -135,4 +148,76 @@ tspan:nth-child(10) { animation-delay: 2s; }
 
 .third-section {
   display: flex;
+}
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5.5rem;
+  height: 80vh;
+  
+}
+.profile-pic {
+  display: flex;
+  height: 400px;
+  margin: auto 0;
+  
+}
+/* .profline-content{ */
+
+.profile-text {
+  text-align: center;
+}
+.profile-text p {
+  font-weight: 600;
+}
+.profile-text1 {
+  text-align: center;
+  color: gray;
+}
+.profile-content{
+  padding: 0;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.profile-text h1 {
+  padding: 0; /* Keep internal spacing unchanged */
+  font-size: 2.7rem; /* Maintain font size */
+  margin: 10px 0; /* Reduce gap above and below the element */
+}
+.btn-container{
+  margin-left: 4%;
+}
+
+button {
+  background-color: rgb(34, 76, 56); 
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 15px 30px; /* Add padding */
+  font-size: 1.2rem; /* Increase font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 2rem; /* Rounded corners */
+  margin-left: 2%;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
+}
+
+button:hover {
+  background-color: gray; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+  background-color: gainsboro; /* Even darker blue when clicked */
+  transform: scale(0.95); /* Slightly shrink button when clicked */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(234, 236, 238, 0.5); /* Add custom focus outline */
+}
+.icon-container{
+  display: flex;
+  height: 40px;
+  margin: auto 0;
+  padding-left: 34.8%;
+  padding-top: 1.8vh;
 }
